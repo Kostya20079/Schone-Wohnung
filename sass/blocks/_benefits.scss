@@ -1,0 +1,36 @@
+.benefits {
+  background-color: $light-gray;
+  padding: 35px 0;
+  margin-bottom: 95px;
+  &__title {
+    @include sectionTitle($blue);
+    margin-bottom: 20px;
+  }
+
+  &__list { 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    width: 375px;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__list-item-img {
+    width: 193px;
+    height: 193px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    img {
+      border-radius: 60px;
+    }
+  }
+
+  &__list-item-text {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+  }
+}

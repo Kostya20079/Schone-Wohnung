@@ -1,0 +1,507 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  zoom: 80%;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #1e1b16;
+}
+
+a {
+  color: #1e1b16;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-menu {
+  padding: 12.5px;
+  background-color: #d9d9d9;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-menu__body {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu__logo-text {
+  font-family: "Red Hat Display", sans-serif;
+  color: #015366;
+  font-weight: bold;
+  font-size: 35px;
+}
+.nav-menu__list {
+  display: flex;
+  align-items: center;
+}
+.nav-menu__list li {
+  font-weight: 600;
+}
+.nav-menu__list li a {
+  font-size: 25px;
+  color: #015366;
+}
+.nav-menu__list li:not(:last-child) {
+  margin-right: 53px;
+}
+.nav-menu__list li:hover a {
+  transition: all 0.3s;
+  color: #e99f10;
+}
+
+.contact-button-nav {
+  background-color: #ebbf1f;
+  width: 210px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.contact-button-nav__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-button-nav:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.header {
+  background: url("./../img/headerBg.jpg");
+  background-size: cover;
+  margin-top: 85px;
+  margin-bottom: 95px;
+}
+.header__body {
+  height: 705px;
+  position: relative;
+}
+.header__info {
+  position: absolute;
+  left: 30px;
+  top: 150px;
+  width: 754px;
+}
+.header__description {
+  color: #ffffff;
+  font-size: 39px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.header__buttons {
+  display: flex;
+}
+.header__image {
+  position: absolute;
+  bottom: 0;
+  right: -85px;
+}
+
+.contact-button-facilities {
+  background-color: #ebbf1f;
+  width: 270px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  margin-right: 50px;
+}
+.contact-button-facilities__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-button-facilities:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.contact-button-header {
+  background-color: #ebbf1f;
+  width: 270px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.contact-button-header__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-button-header:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.facilities {
+  margin-bottom: 95px;
+}
+.facilities__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ebbf1f;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.facilities__list {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-gap: 50px;
+}
+.facilities__list-item {
+  position: relative;
+  border-radius: 20px;
+}
+.facilities__list-item {
+  width: 370px;
+  height: 454px;
+}
+.facilities__list-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(217, 217, 217, 0.6);
+  padding: 15px 29px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.facilities__list-item-text {
+  font-size: 30px;
+  font-weight: 600;
+}
+.facilities__list-item-text:first-child {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.facilities__list-item-button {
+  background-color: #ebbf1f;
+  width: 312px;
+  height: 66px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.facilities__list-item-button__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.facilities__list-item-button:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.benefits {
+  background-color: #d9d9d9;
+  padding: 35px 0;
+  margin-bottom: 95px;
+}
+.benefits__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #015366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits__list-item {
+  width: 375px;
+  align-items: center;
+  text-align: center;
+}
+.benefits__list-item-img {
+  width: 193px;
+  height: 193px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+.benefits__list-item-img img {
+  border-radius: 60px;
+}
+.benefits__list-item-text {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.form__body {
+  position: relative;
+  height: 620px;
+}
+.form__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ebbf1f;
+  text-align: center;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.form__image {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: 510px;
+  height: 620px;
+}
+.form__form-body {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 460px;
+  border-radius: 50px;
+  padding: 18px 0 18px 45px;
+}
+.form__submit-button {
+  background-color: #ebbf1f;
+  width: 476px;
+  height: 67px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  font-weight: 500;
+  border-radius: 110px;
+}
+.form__submit-button__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form__submit-button:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.form-input {
+  background-color: #a4a4a4;
+  width: 475px;
+  height: 54px;
+  border-radius: 110px;
+  padding: 0 60px;
+}
+.form-input:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-input-message {
+  background-color: #a4a4a4;
+  width: 785px;
+  height: 125px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 0 60px;
+}
+
+.footer {
+  background-color: #a4a4a4;
+}
+.footer__body {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo-text {
+  font-family: "Red Hat Display", sans-serif;
+  color: #015366;
+  font-weight: bold;
+  font-size: 32px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts-info {
+  margin-bottom: 10px;
+}
+.footer__contacts-info-tel, .footer__contacts-info-mail {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-info-name {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.footer__contacts-info-tel-link, .footer__contacts-info-mail-link {
+  font-family: "Gemunu Libre", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__navigation-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer__nav-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__nav-link a {
+  color: #015366;
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer__nav-link a:hover {
+  transition: all 0.3s;
+  color: #e99f10;
+}
+.footer__contacts-icons-list {
+  display: flex;
+}
+.footer__contacts-icons-list a:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__button-contact-link {
+  background-color: #ebbf1f;
+  width: 210px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.footer__button-contact-link__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__button-contact-link:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}/*# sourceMappingURL=mainPage.css.map */

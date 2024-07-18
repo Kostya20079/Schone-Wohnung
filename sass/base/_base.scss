@@ -1,0 +1,20 @@
+html {
+    zoom: 80%;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: $black;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

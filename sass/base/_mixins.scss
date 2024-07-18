@@ -1,0 +1,31 @@
+@mixin btn($bg-color, $width, $height, $selected-color, $f-size) {
+  background-color: $bg-color;
+  width: $width;
+  height: $height;
+  font-size: $f-size;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+  }
+
+  &:hover {
+    transition: all 0.5s;
+    background-color: $selected-color;
+  }
+}
+
+@mixin sectionTitle($color) {
+  font-family: $font-family-Red;
+  font-weight: bold;
+  font-size: 40px;
+  color: $color;
+  text-align: center;
+}

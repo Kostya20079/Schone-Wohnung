@@ -1,0 +1,46 @@
+.facilities {
+  margin-bottom: 95px;
+  &__title {
+    @include sectionTitle($yellow);
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-gap: 50px;
+  }
+
+  &__list-item {
+    position: relative;
+    border-radius: 20px;
+  }
+
+  &__list-item {
+    width: 370px;
+    height: 454px;
+  }
+  
+  &__list-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(217, 217, 217, 0.6);
+    padding: 15px 29px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  &__list-item-text {
+    &:first-child {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  &__list-item-button {
+    @include btn($yellow, 312px, 66px, $yellow-selected, 20px)
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  background: url('./../img/headerBg.jpg');
+  background-size: cover;
+  margin-top: 85px;
+  margin-bottom: 95px;
+  
+  &__body {
+    // width: auto;
+    height: 705px;
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    width: 754px;
+  }
+
+  &__description {
+    color: $white;
+    font-size: 39px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: -85px;
+  }
+}
+
+.contact-button-facilities {
+  @include btn($yellow, 270px, 60px, $yellow-selected, 20px);
+  margin-right: 50px;
+}
+
+.contact-button-header {
+  @include btn($yellow, 270px, 60px, $yellow-selected, 24px);
+}

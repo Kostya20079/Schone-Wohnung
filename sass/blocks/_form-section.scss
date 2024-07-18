@@ -1,0 +1,57 @@
+.form {
+  
+  &__body {
+    position: relative;
+    height: 620px; 
+  }
+
+  &__title {
+    @include sectionTitle($yellow);
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 510px;
+    height: 620px;
+  }
+
+  &__form-body {
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 460px;
+    border-radius: 50px;
+    padding: 18px 0 18px 45px
+  }
+
+  &__submit-button {
+    @include btn($yellow, 476px, 67px, $yellow-selected, 20px);
+    font-weight: 500;
+    border-radius: 110px;
+  }
+}
+
+.form-input {
+  background-color: $dark-gray;
+  width: 475px;
+  height: 54px;
+  border-radius: 110px;
+  padding: 0 60px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.form-input-message {
+  background-color: $dark-gray;
+  width: 785px;
+  height: 125px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 0 60px;
+}

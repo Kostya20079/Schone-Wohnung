@@ -1,0 +1,79 @@
+.footer {
+  background-color: $dark-gray;
+
+  &__body {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-text {
+    font-family: $font-family-Red;
+    color: $blue;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts-info {
+    margin-bottom: 10px;
+  }
+
+  &__contacts-info-tel,
+  &__contacts-info-mail {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts-info-name {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  &__contacts-info-tel-link,
+  &__contacts-info-mail-link {
+    font-family: $font-family-Gemunu;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__navigation-title {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__nav-link {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    a {
+      color: $blue;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    a:hover {
+      transition: all 0.3s;
+      color: $yellow-selected;
+    }
+  }
+
+  &__contacts-icons-list {
+    display: flex;
+    a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__button-contact-link {
+    @include btn($yellow, 210px, 60px, $yellow-selected, 24px);
+  }
+}

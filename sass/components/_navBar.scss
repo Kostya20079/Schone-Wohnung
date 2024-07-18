@@ -1,0 +1,53 @@
+.nav-menu {
+  padding: 12.5px;
+  background-color: $light-gray;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__body {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo-text {
+    font-family: $font-family-Red;
+    color: $blue;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    li {
+      font-weight: 600;
+      a {
+        font-size: 25px;
+        color: $blue;
+      }
+      &:not(:last-child) {
+        margin-right: 53px;
+      }
+      &:hover {
+        a {
+          transition: all 0.3s;
+          color: $yellow-selected;
+        }
+      }
+    }
+  }
+}
+
+.contact-button-nav {
+  @include btn($yellow, 210px, 60px, $yellow-selected, 25px);
+}
