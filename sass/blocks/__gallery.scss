@@ -1,0 +1,30 @@
+.gallery {
+  margin: 85px 0 65px 0;
+
+  &__title {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    color: $yellow;
+    font-size: 40px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-gap: 1em;
+  }
+
+  &__item {
+    width: 380px;
+    max-height: 460px;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

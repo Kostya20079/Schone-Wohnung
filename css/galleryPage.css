@@ -1,0 +1,306 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+html {
+  zoom: 80%;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #1e1b16;
+  height: 100%;
+}
+
+a {
+  color: #1e1b16;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.nav-menu {
+  padding: 12.5px;
+  background-color: #d9d9d9;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-menu__body {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu__logo-text {
+  font-family: "Red Hat Display", sans-serif;
+  color: #015366;
+  font-weight: bold;
+  font-size: 35px;
+}
+.nav-menu__list {
+  display: flex;
+  align-items: center;
+}
+.nav-menu__list li {
+  font-weight: 600;
+}
+.nav-menu__list li a {
+  font-size: 25px;
+  color: #015366;
+}
+.nav-menu__list li:not(:last-child) {
+  margin-right: 53px;
+}
+.nav-menu__list li:hover a {
+  transition: all 0.3s;
+  color: #e99f10;
+}
+
+.contact-button-nav {
+  background-color: #ebbf1f;
+  width: 210px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.contact-button-nav__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-button-nav:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}
+
+.gallery {
+  margin: 85px 0 65px 0;
+}
+.gallery__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  color: #ebbf1f;
+  font-size: 40px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-gap: 1em;
+}
+.gallery__item {
+  width: 380px;
+  max-height: 460px;
+}
+.gallery__item img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #d9d9d9;
+}
+.footer__body {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo-text {
+  font-family: "Red Hat Display", sans-serif;
+  color: #015366;
+  font-weight: bold;
+  font-size: 32px;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contacts-info {
+  margin-bottom: 10px;
+}
+.footer__contacts-info-tel, .footer__contacts-info-mail {
+  display: flex;
+  align-items: center;
+}
+.footer__contacts-info-tel {
+  padding-left: 30px;
+  background: transparent url("./../icons/phone-call.svg") no-repeat left;
+  background-size: 20px;
+}
+.footer__contacts-info-mail {
+  padding-left: 30px;
+  background: transparent url("./../icons/mail.svg") no-repeat left;
+  background-size: 20px;
+}
+.footer__contacts-info-name {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.footer__contacts-info-tel-link, .footer__contacts-info-mail-link {
+  font-family: "Gemunu Libre", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__navigation-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer__nav-link:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__nav-link a {
+  color: #015366;
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer__nav-link a:hover {
+  transition: all 0.3s;
+  color: #e99f10;
+}
+.footer__contacts-icons-list {
+  display: flex;
+}
+.footer__contacts-icons-list a:not(:last-child) {
+  margin-right: 15px;
+}
+.footer__button-contact-link {
+  background-color: #ebbf1f;
+  width: 210px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+.footer__button-contact-link__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__button-contact-link:hover {
+  transition: all 0.5s;
+  background-color: #e99f10;
+}/*# sourceMappingURL=galleryPage.css.map */
