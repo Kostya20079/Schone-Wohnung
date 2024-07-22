@@ -1,5 +1,5 @@
 .footer {
-  background-color: $dark-gray;
+  background-color: $light-gray;
 
   &__body {
     padding: 32px 0;
@@ -28,6 +28,18 @@
   &__contacts-info-mail {
     display: flex;
     align-items: center;
+  }
+
+  &__contacts-info-tel {
+    padding-left: 30px;
+    background: transparent url('./../icons/phone-call.svg') no-repeat left;
+    background-size: 20px;
+  }
+
+  &__contacts-info-mail {
+    padding-left: 30px;
+    background: transparent url('./../icons/mail.svg') no-repeat left;
+    background-size: 20px;
   }
 
   &__contacts-info-name {

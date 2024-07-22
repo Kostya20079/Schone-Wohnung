@@ -1,0 +1,126 @@
+.contact {
+  &__header {
+    margin-top: 85px;
+    margin-bottom: 25px;
+  }
+  &__header-body {
+    padding: 45px 0 45px 0px;
+  }
+  &__header-description-title {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  &__header-description-text {
+    display: block;
+    padding-left: 15px;
+    max-width: 1055px;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  &__content {
+    margin-bottom: 55px;
+  }
+  &__content-body {
+    display: flex;
+  }
+
+  &__aside {
+    margin-right: 75px;
+  }
+  &__aside-title {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 35px;
+    color: $yellow;
+    margin-bottom: 30px;
+  }
+  &__aside-body{
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 320px;
+    border-radius: 50px;
+    padding: 30px 0 30px 30px;
+  }
+  &__aside-title-net {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  &__aside-info-name {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  &__aside-tel, &__aside-mail {
+    margin-bottom: 30px;
+  }
+  &__aside-tel {
+    padding-left: 30px;
+    background: transparent url('./../icons/phone-call.svg') no-repeat left;
+    background-size: 20px;
+  }
+  &__aside-mail {
+    padding-left: 30px;
+    background: transparent url('./../icons/mail.svg') no-repeat left;
+    background-size: 20px;
+  }
+  &__aside-info-tel-link, &__aside-info-mail-link {
+    font-family: $font-family-Gemunu;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  &__aside-netlist {
+    display: flex;
+    a:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__forms-body {
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    width: 755px;
+    height: 470px;
+    border-radius: 50px;
+    padding: 18px 0 18px 35px
+  }
+  &__form-title {
+    font-family: $font-family-Red;
+    font-weight: bold;
+    font-size: 35px;
+    color: $yellow;
+    margin-bottom: 30px;
+  }
+  &__form-submit-button {
+    @include btn($yellow, 450px, 70px, $yellow-selected, 20px);
+    font-weight: 500;
+    border-radius: 110px;
+  }
+}
+
+.form-input {
+  background-color: $dark-gray;
+  width: 400px;
+  height: 54px;
+  border-radius: 110px;
+  padding: 0 50px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.form-input-message {
+  background-color: $dark-gray;
+  width: 660px;
+  height: 125px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 0 50px;
+}

@@ -96,6 +96,7 @@ html, body {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   color: #1e1b16;
+  height: 100%;
 }
 
 a {
@@ -107,6 +108,16 @@ a {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
 }
 
 .nav-menu {
@@ -424,7 +435,7 @@ a {
 }
 
 .footer {
-  background-color: #a4a4a4;
+  background-color: #d9d9d9;
 }
 .footer__body {
   padding: 32px 0;
@@ -448,6 +459,16 @@ a {
 .footer__contacts-info-tel, .footer__contacts-info-mail {
   display: flex;
   align-items: center;
+}
+.footer__contacts-info-tel {
+  padding-left: 30px;
+  background: transparent url("./../icons/phone-call.svg") no-repeat left;
+  background-size: 20px;
+}
+.footer__contacts-info-mail {
+  padding-left: 30px;
+  background: transparent url("./../icons/mail.svg") no-repeat left;
+  background-size: 20px;
 }
 .footer__contacts-info-name {
   font-family: "Red Hat Display", sans-serif;
