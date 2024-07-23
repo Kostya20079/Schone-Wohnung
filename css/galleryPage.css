@@ -191,8 +191,10 @@ a {
 .gallery__title {
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
+  font-size: 35px;
   color: #ebbf1f;
-  font-size: 40px;
+  text-align: center;
+  text-align: left;
   padding-top: 60px;
   margin-bottom: 40px;
 }

@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schöne Wohnung</title>
-    <link rel="stylesheet" href="./../css/galleryPage.css" />
+    <link rel="stylesheet" href="./../css/facilitiesPage.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script>
+      new WOW().init();
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -31,11 +34,17 @@
         </div>
       </nav>
 
+      <!-- *Site content -->
       <main class="content">
         <div class="container">
-          <section class="gallery">
-            <h2 class="gallery__title">Unsere Arbeit</h2>
-            <div class="gallery__images animate__animated animate__fadeIn animate__faster" id="gallery"></div>
+          <section class="facilities">
+            <div class="facilities__body" id="facilities-body">
+              <h2
+                class="facilities__title wow animate__animated animate__fadeIn animate__faster"
+              >
+                Unsere Dienstleistungen
+              </h2>
+            </div>
           </section>
         </div>
       </main>
@@ -91,14 +100,16 @@
                   <li class="footer__nav-link">
                     <a href="./../MainPage.html">Startseite</a>
                   </li>
-                  <li class="footer__nav-link"><a href="./Facilities.html">Leistungen</a></li>
+                  <li class="footer__nav-link">
+                    <a href="./Facilities.html">Leistungen</a>
+                  </li>
                   <li class="footer__nav-link">
                     <a href="./WorksGallery.html">Unsere Arbeit</a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <a href="ContactPage.html" class="footer__button-contact-link">
+            <a href="./ContactPage.html" class="footer__button-contact-link">
               <span class="footer__button-contact-link__text">Kontakt</span>
             </a>
           </div>
@@ -106,6 +117,6 @@
       </footer>
     </div>
 
-    <script src="./../js/gallery.js"></script>
+    <script src="./../js/facilityCard.js"></script>
   </body>
 </html>

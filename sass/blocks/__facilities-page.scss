@@ -1,8 +1,11 @@
 .facilities {
-  margin-bottom: 95px;
+  margin: 85px 0 65px 0;
+
   &__title {
     @include sectionTitle($yellow);
-    margin-bottom: 50px;
+    text-align: left;
+    padding-top: 60px;
+    margin-bottom: 40px;
   }
 
   @include facilitiesCards();
