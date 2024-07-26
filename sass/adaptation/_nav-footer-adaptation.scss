@@ -1,0 +1,196 @@
+@media screen and (max-width: 1105px) {
+  .nav-menu {
+    &__list {
+      a {
+        font-size: 15px;
+      }
+      li {
+        margin-right: 30px;
+      }
+    }
+    &__logo-text {
+      font-size: 28px;
+    }
+  }
+
+  .footer {
+    &__body {
+      margin: 0 30px;
+    }
+    &__logo-text {
+      font-size: 28px;
+    }
+    &__contacts-info-name {
+      font-family: $font-family-Red;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    &__contacts-info-tel-link,
+    &__contacts-info-mail-link {
+      font-family: $font-family-Gemunu;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    &__contacts-icons-list {
+      img {
+        width: 35px;
+        height: auto;
+      }
+    }
+    &__button-contact-link {
+      @include btn($yellow, 190px, 55px, $yellow-selected, 20px);
+    }
+  }
+
+  .contact-button-nav {
+    @include btn($yellow, 190px, 55px, $yellow-selected, 20px);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .burger {
+    display: flex;
+  }
+  .nav-menu {
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+    }
+    &__logo {
+      justify-content: flex-start;
+    }
+    &__logo-text {
+      font-size: 22px;
+    }
+    &__content {
+      display: none;
+      flex-direction: column;
+      justify-content: normal;
+      align-items: center;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      overflow-y: auto;
+      padding: 50px 40px;
+      background-color: $dark-gray;
+      gap: 40px;
+      animation: burgerAnimation 0.4s;
+    }
+    &__list {
+      margin-top: 100px;
+      flex-direction: column;
+      gap: 40px;
+      li {
+        margin: 0;
+      }
+    }
+  }
+
+  .footer {
+    &__logo-text {
+      font-size: 22px;
+    }
+
+    &__contacts-info-name {
+      font-size: 16px;
+    }
+
+    &__navigation-title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &__button-contact-link {
+      @include btn($yellow, 180px, 50px, $yellow-selected, 18px);
+    }
+  }
+
+  @keyframes burgerAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .footer {
+    &__body {
+      flex-wrap: wrap;
+    }
+    &__contacts {
+      order: 4;
+    }
+    &__navigation {
+      order: 3;
+    }
+
+    &__logo, &__contacts, &__navigation {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__button-contact-link {
+      margin: 0 auto;
+    }
+
+    &__logo, &__button-contact-link {
+      margin-bottom: 40px;  
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    &__body {
+      flex-direction: column;
+    }
+    &__contacts {
+      order: 2;
+    }
+    &__navigation {
+      order: 1;
+    }
+    &__button-contact-link {
+      margin: 0;
+      order: 4;
+    }
+    &__logo, &__contacts, &__navigation {
+      margin-bottom: 20px;
+    }
+    &__logo, &__contacts, &__navigation {
+      padding-bottom: 10px;
+      border-bottom: 2px dotted $black;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .nav-menu {
+    .container {
+      padding: 0;
+    }
+    &__body {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) { 
+  .nav-menu {
+    &__body {
+      padding: 0;
+    }
+  }
+}

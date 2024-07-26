@@ -2,7 +2,7 @@
   margin: 85px 0 65px 0;
 
   &__title {
-    @include sectionTitle($yellow);
+    @include sectionTitle($yellow, 35px);
     text-align: left;
     padding-top: 60px;
     margin-bottom: 40px;
@@ -10,6 +10,7 @@
 
   &__list {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 380px);
     grid-gap: 1em;
   }
@@ -17,7 +18,7 @@
   &__item {
     width: 380px;
     max-height: 460px;
-    
+
     img {
       max-width: 100%;
       height: auto;

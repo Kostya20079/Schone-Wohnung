@@ -29,6 +29,18 @@ const photos = [
   { name: "Image(28)" },
   { name: "Image(29)" },
   { name: "Image(30)" },
+  { name: "Image(31)" },
+  { name: "Image(32)" },
+  { name: "Image(33)" },
+  { name: "Image(34)" },
+  { name: "Image(35)" },
+  { name: "Image(36)" },
+  { name: "Image(37)" },
+  { name: "Image(38)" },
+  { name: "Image(39)" },
+  { name: "Image(40)" },
+  { name: "Image(41)" },
+  { name: "Image(42)" },
 ];
 
 const listForItems = document.getElementById("gallery");

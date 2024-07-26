@@ -11,6 +11,10 @@
     display: flex;
     justify-content: space-around;
   }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__logo {
     display: flex;
@@ -31,12 +35,10 @@
 
     li {
       font-weight: 600;
+      margin-right: 53px;
       a {
         font-size: 25px;
         color: $blue;
-      }
-      &:not(:last-child) {
-        margin-right: 53px;
       }
       &:hover {
         a {
@@ -50,4 +52,59 @@
 
 .contact-button-nav {
   @include btn($yellow, 210px, 60px, $yellow-selected, 25px);
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: $yellow;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+
+  &__span {
+    height: 5px;
+    width: 80%;
+    transform: scale(1);
+    background-color: $yellow;
+    border-radius: 3px;
+  }
+
+  &.active span {
+    transform: scale(0);
+  }
+
+  &.active::before {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+  }
+  &.active::after {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+  }
+}
+
+.open {
+  display: flex !important; 
 }

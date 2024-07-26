@@ -3,7 +3,7 @@
   padding: 35px 0;
   margin-bottom: 95px;
   &__title {
-    @include sectionTitle($blue);
+    @include sectionTitle($blue, 35px);
     margin-bottom: 20px;
   }
 
@@ -20,7 +20,7 @@
 
   &__list-item-img {
     width: 193px;
-    height: 193px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 21px;
     img {

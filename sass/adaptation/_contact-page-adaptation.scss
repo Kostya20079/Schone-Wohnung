@@ -1,0 +1,166 @@
+@media screen and (max-width: 1105px) {
+  .contact {
+    margin: 70px 0;
+
+    &__header-body {
+      padding: 35px 0 0 0;
+    }
+
+    &__header-description {
+      padding-left: 30px;
+    }
+
+    &__header-description-title {
+      font-size: 30px;
+    }
+
+    &__header-description-text {
+      font-size: 24px;
+    }
+
+    &__aside {
+      margin-right: 30px;
+    }
+
+    &__aside-title, &__form-title {
+      @include sectionTitle($yellow, 30px)
+    }
+
+    &__forms-body {
+      width: 650px;
+      height: auto;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    &__form-submit-button {
+      @include btn($yellow, 80%, 45px, $yellow-selected, 16px);
+      font-weight: 500;
+      border-radius: 110px;
+    }
+  }
+
+  .form-input,
+    .form-input-message {
+      width: 80%;
+      padding: 0 45px;
+    }
+
+    .form-input {
+      height: 35px;
+    }
+    .form-input-message {
+      height: 85px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+  .contact {
+    &__header-description {
+      width: auto;
+    }
+
+    &__aside {
+      margin: 0 0 30px 0;
+    }
+
+    &__aside-title, &__form-title {
+      @include sectionTitle($yellow, 25px);
+      margin-bottom: 20px;
+    }
+
+    &__aside-body {
+      padding-left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__aside-title-net {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    &__aside-info-name {
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &__aside-net, &__aside-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+    }
+
+    &__aside-mail, &__aside-tel {
+      background-position: left bottom;
+    }
+
+    &__content-body {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact {
+    &__header {
+      margin: 55px 0 25px 0;
+    }
+
+    &__header-description-title {
+      font-size: 20px;
+    }
+
+    &__header-description-text {
+      font-size: 18px;
+      padding: 0;
+    }
+
+    &__aside-info-mail-link, &__aside-info-tel-link {
+      margin: 0;
+    }
+
+    &__forms-body {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    &__aside-body {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__aside-net, &__aside-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+    }
+
+    &__forms-body {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .contact {
+    &__forms-body {
+      width: 330px;
+    }
+  }
+}

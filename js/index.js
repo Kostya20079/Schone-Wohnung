@@ -10,3 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+const burger = document.querySelector('.burger')
+const navContent = document.querySelector('.nav-menu__content')
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle('active')
+  navContent.classList.toggle('open')
+})

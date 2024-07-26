@@ -1,11 +1,10 @@
 .header {
-  background: url('./../img/headerBg.jpg');
+  background: url("./../img/headerBg.jpg");
   background-size: cover;
   margin-top: 85px;
   margin-bottom: 95px;
-  
+
   &__body {
-    // width: auto;
     height: 705px;
     position: relative;
   }

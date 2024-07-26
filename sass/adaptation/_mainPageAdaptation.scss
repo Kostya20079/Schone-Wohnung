@@ -1,0 +1,406 @@
+@media screen and (max-width: 1105px) {
+  .header {
+    max-width: 100%;
+    margin: 80px 0;
+    &__body {
+      height: 555px;
+    }
+    &__info {
+      width: 600px;
+      z-index: 4;
+    }
+    &__description {
+      font-size: 25px;
+    }
+    &__image {
+      width: 550px;
+      height: auto;
+      right: 30px;
+    }
+
+    .contact-button-facilities {
+      @include btn($yellow, 250px, 55px, $yellow-selected, 18px);
+      margin-right: 50px;
+    }
+
+    .contact-button-header {
+      @include btn($yellow, 250px, 55px, $yellow-selected, 22px);
+    }
+  }
+
+  .facilities {
+    margin-bottom: 80px;
+    &__list {
+      grid-template-columns: repeat(3, 285px);
+      grid-gap: 25px;
+      justify-content: center;
+    }
+    &__list-item {
+      width: 285px;
+      height: auto;
+    }
+    &__list-item-text {
+      font-size: 22px;
+    }
+  }
+
+  .benefits {
+    margin-bottom: 80px;
+    &__list {
+      justify-content: space-around;
+    }
+    &__list-item {
+      width: 250px;
+    }
+    &__list-item-img {
+      img {
+        width: 180px;
+      }
+    }
+    &__list-item-text {
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  .form {
+    height: auto;
+    margin-left: 30px;
+    &__form-body {
+      height: auto;
+      width: 730px;
+    }
+    &__image {
+      right: 30px;
+      width: 430px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .form {
+    margin-left: 0;
+    &__body {
+      height: auto;
+      margin-left: 10%;
+    }
+    &__image {
+      width: 280px;
+      height: auto;
+      bottom: 0;
+      right: 80px;
+    }
+    &__form-body {
+      width: 600px;
+      height: auto;
+      align-items: center;
+      padding: 18px 0;
+      margin-bottom: 20px;
+    }
+    &__submit-button {
+      @include btn($yellow, 80%, 45px, $yellow-selected, 16px);
+      font-weight: 500;
+      border-radius: 110px;
+    }
+    .form-input,
+    .form-input-message {
+      width: 80%;
+      padding: 0 45px;
+    }
+
+    .form-input {
+      height: 35px;
+    }
+    .form-input-message {
+      height: 85px;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    margin: 55px 0 60px 0;
+
+    &__body {
+      height: 400px;
+    }
+
+    &__info {
+      position: absolute;
+      left: 30px;
+      top: 80px;
+      width: 400px;
+      margin-left: 30px;
+    }
+
+    &__description {
+      color: $white;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    &__image {
+      width: 400px;
+      height: auto;
+      right: 10px;
+    }
+
+    .contact-button-facilities {
+      @include btn($yellow, 250px, 48px, $yellow-selected, 12px);
+      margin-right: 30px;
+    }
+
+    .contact-button-header {
+      @include btn($yellow, 200px, 48px, $yellow-selected, 18px);
+    }
+  }
+
+  .facilities {
+    margin-bottom: 60px;
+
+    &__title {
+      @include sectionTitle($yellow, 25px);
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-gap: 20px;
+    }
+
+    &__list-item {
+      position: relative;
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+
+  .benefits {
+    margin-bottom: 60px;
+
+    &__title {
+      @include sectionTitle($blue, 25px);
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__list-item {
+      &:not(:last-child, :nth-child(2)) {
+        margin: 0 35px 35px 0;
+      }
+    }
+
+    &__list-item-img {
+      img {
+        height: auto;
+        width: 145px;
+      }
+    }
+
+    &__list-item-text {
+      font-size: 16px;
+    }
+  }
+
+  .form {
+    margin-bottom: 60px;
+    height: auto;
+    margin-left: 15px;
+    &__submit-button {
+      width: 80%;
+      font-weight: 500;
+      border-radius: 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    margin-left: 0;
+    &__body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+    }
+    &__image {
+      display: none;
+    }
+    &__submit-button {
+      font-weight: 500;
+      border-radius: 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    &__body {
+      height: 636px;
+      object-fit: cover;
+    }
+    &__info {
+      width: 85%;
+      margin: 0;
+      top: 160px;
+      left: 55px;
+    }
+    &__description {
+      font-size: 30px;
+    }
+    &__image {
+      display: none;
+    }
+
+    .contact-button-facilities {
+      @include btn($yellow, 220px, 60px, $yellow-selected, 16px);
+      margin-right: 50px;
+    }
+
+    .contact-button-header {
+      @include btn($yellow, 220px, 60px, $yellow-selected, 20px);
+    }
+  }
+
+  .facilities {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 350px);
+      grid-gap: 20px;
+    }
+
+    &__list-item {
+      position: relative;
+      width: 350px;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+
+  .form {
+    margin: 0;
+
+    &__title {
+      @include sectionTitle($yellow, 25px);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &__form-body {
+      width: 500px;
+      height: auto;
+      padding: 15px 0;
+    }
+
+    &__submit-button {
+      @include btn($yellow, 476px, 67px, $yellow-selected, 18px);
+      font-weight: 500;
+      border-radius: 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    margin-bottom: 45px;
+    &__info {
+      left: 40px;
+    }
+    &__description {
+      font-size: 28px;
+    }
+    .contact-button-facilities {
+      @include btn($yellow, 200px, 45px, $yellow-selected, 16px);
+      margin-right: 35px;
+    }
+
+    .contact-button-header {
+      @include btn($yellow, 200px, 45px, $yellow-selected, 20px);
+    }
+  }
+  .facilities {
+    margin-bottom: 45px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(1, 250px);
+      grid-gap: 20px;
+    }
+
+    &__list-item {
+      position: relative;
+      width: 250px;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+
+  .benefits {
+    margin-bottom: 45px;
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__list-item {
+      &:first-child {
+        margin: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  .form {
+    &__form-body {
+      width: 400px;
+      height: auto;
+      padding: 15px 0;
+    }
+
+    &__submit-button {
+      @include btn($yellow, 80%, 45px, $yellow-selected, 14px);
+      font-weight: 500;
+      border-radius: 110px;
+    }
+
+    .form-input-message {
+      width: 80%;
+      height: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .header {
+
+    &__info {
+      left: 30px;
+    }
+
+    &__description {
+      font-size: 22px;
+    }
+
+    .contact-button-facilities {
+      @include btn($yellow, 200px, 45px, $yellow-selected, 13px);
+      margin-right: 20px;
+    }
+  }
+
+  .form {
+    &__form-body {
+      width: 330px;
+    }
+  }
+}

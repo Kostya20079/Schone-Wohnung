@@ -19,14 +19,19 @@
             <div class="nav-menu__logo">
               <span class="nav-menu__logo-text">Schöne Wohnung</span>
             </div>
-            <ul class="nav-menu__list">
-              <li><a href="./../MainPage.html">Startseite</a></li>
-              <li><a href="./Facilities.html">Leistungen</a></li>
-              <li><a href="./WorksGallery.html">Unsere Arbeit</a></li>
-            </ul>
-            <a href="ContactPage.html" class="contact-button-nav"
-              ><span class="contact-button-nav__text">Kontakt</span></a
-            >
+            <div class="nav-menu__content">
+              <ul class="nav-menu__list">
+                <li><a href="./../index.html">Startseite</a></li>
+                <li><a href="./Facilities.html">Leistungen</a></li>
+                <li><a href="./WorksGallery.html">Unsere Arbeit</a></li>
+              </ul>
+              <a href="./ContactPage.html" class="contact-button-nav"
+                ><span class="contact-button-nav__text">Kontakt</span></a
+              >
+            </div>
+            <div class="burger">
+              <span class="burger__span"></span>
+            </div>
           </div>
         </div>
       </nav>
@@ -60,37 +65,41 @@
             >
               <h3 class="contact__aside-title">Unsere Kontakte</h3>
               <div class="contact__aside-body">
-                <div class="contact__aside-tel">
-                  <span class="contact__aside-info-name">Tel:</span>
-                  <a href="tel:01633425150" class="contact__aside-info-tel-link"
-                    >01633425150</a
-                  >
+                <div class="contact__aside-info">
+                  <div class="contact__aside-tel">
+                    <span class="contact__aside-info-name">Tel:</span>
+                    <a href="tel:01633425150" class="contact__aside-info-tel-link"
+                      >01633425150</a
+                    >
+                  </div>
+                  <div class="contact__aside-mail">
+                    <span class="contact__aside-info-name">Mail:</span>
+                    <a
+                      href="mailto:schonewohnung22@gmail.com"
+                      class="contact__aside-info-mail-link"
+                    >
+                      schonewohnung22@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <div class="contact__aside-mail">
-                  <span class="contact__aside-info-name">Mail:</span>
-                  <a
-                    href="mailto:schonewohnung22@gmail.com"
-                    class="contact__aside-info-mail-link"
-                  >
-                    schonewohnung22@gmail.com
-                  </a>
-                </div>
-                <h4 class="contact__aside-title-net">
-                  Wir sind in sozialen Netzwerken unterwegs
-                </h4>
-                <div class="contact__aside-netlist">
-                  <a href="https://wa.me/491633425150" target="_blank">
-                    <img
-                      src="./../icons/icon-whatsapp.svg"
-                      alt="Schreiben Sie in WhatsApp"
-                    />
-                  </a>
-                  <a href="mailto:schonewohnung22@gmail.com" target="_blank">
-                    <img
-                      src="./../icons/icon-gmail.svg"
-                      alt="Schreiben Sie in Gmail"
-                    />
-                  </a>
+                <div class="contact__aside-net">
+                  <h4 class="contact__aside-title-net">
+                    Wir sind in sozialen Netzwerken unterwegs
+                  </h4>
+                  <div class="contact__aside-netlist">
+                    <a href="https://wa.me/491633425150" target="_blank">
+                      <img
+                        src="./../icons/icon-whatsapp.svg"
+                        alt="Schreiben Sie in WhatsApp"
+                      />
+                    </a>
+                    <a href="mailto:schonewohnung22@gmail.com" target="_blank">
+                      <img
+                        src="./../icons/icon-gmail.svg"
+                        alt="Schreiben Sie in Gmail"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </aside>
@@ -197,9 +206,11 @@
               <nav class="footer__navigation-list">
                 <ul>
                   <li class="footer__nav-link">
-                    <a href="./../MainPage.html">Startseite</a>
+                    <a href="./../index.html">Startseite</a>
                   </li>
-                  <li class="footer__nav-link"><a href="./Facilities.html">Leistungen</a></li>
+                  <li class="footer__nav-link">
+                    <a href="./Facilities.html">Leistungen</a>
+                  </li>
                   <li class="footer__nav-link">
                     <a href="./WorksGallery.html">Unsere Arbeit</a>
                   </li>
@@ -213,5 +224,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./../js/index.js"></script>
   </body>
 </html>

@@ -1,9 +1,41 @@
 .facilities {
   margin-bottom: 95px;
   &__title {
-    @include sectionTitle($yellow);
+    @include sectionTitle($yellow, 35px);
     margin-bottom: 50px;
   }
 
-  @include facilitiesCards();
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-gap: 50px;
+  }
+
+  &__list-item {
+    position: relative;
+    width: 370px;
+    height: 454px;
+    border-radius: 20px;
+  }
+
+  &__list-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(217, 217, 217, 0.6);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  &__list-item-text {
+    color: $blue;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
 }

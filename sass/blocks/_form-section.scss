@@ -5,7 +5,7 @@
   }
 
   &__title {
-    @include sectionTitle($yellow);
+    @include sectionTitle($yellow, 35px);
     text-align: left;
     margin-bottom: 30px;
   }
@@ -48,7 +48,7 @@
 
 .form-input-message {
   background-color: $dark-gray;
-  width: 785px;
+  width: 85%;
   height: 125px;
   border-radius: 20px;
   margin-bottom: 20px;

@@ -19,14 +19,19 @@
             <div class="nav-menu__logo">
               <span class="nav-menu__logo-text">Schöne Wohnung</span>
             </div>
-            <ul class="nav-menu__list">
-              <li><a href="./../MainPage.html">Startseite</a></li>
-              <li><a href="./Facilities.html">Leistungen</a></li>
-              <li><a href="./WorksGallery.html">Unsere Arbeit</a></li>
-            </ul>
-            <a href="./ContactPage.html" class="contact-button-nav"
-              ><span class="contact-button-nav__text">Kontakt</span></a
-            >
+            <div class="nav-menu__content">
+              <ul class="nav-menu__list">
+                <li><a href="./../index.html">Startseite</a></li>
+                <li><a href="./Facilities.html">Leistungen</a></li>
+                <li><a href="./WorksGallery.html">Unsere Arbeit</a></li>
+              </ul>
+              <a href="./ContactPage.html" class="contact-button-nav"
+                ><span class="contact-button-nav__text">Kontakt</span></a
+              >
+            </div>
+            <div class="burger">
+              <span class="burger__span"></span>
+            </div>
           </div>
         </div>
       </nav>
@@ -35,7 +40,10 @@
         <div class="container">
           <section class="gallery">
             <h2 class="gallery__title">Unsere Arbeit</h2>
-            <div class="gallery__images animate__animated animate__fadeIn animate__faster" id="gallery"></div>
+            <div
+              class="gallery__images animate__animated animate__fadeIn animate__faster"
+              id="gallery"
+            ></div>
           </section>
         </div>
       </main>
@@ -89,9 +97,11 @@
               <nav class="footer__navigation-list">
                 <ul>
                   <li class="footer__nav-link">
-                    <a href="./../MainPage.html">Startseite</a>
+                    <a href="./../index.html">Startseite</a>
                   </li>
-                  <li class="footer__nav-link"><a href="./Facilities.html">Leistungen</a></li>
+                  <li class="footer__nav-link">
+                    <a href="./Facilities.html">Leistungen</a>
+                  </li>
                   <li class="footer__nav-link">
                     <a href="./WorksGallery.html">Unsere Arbeit</a>
                   </li>
@@ -107,5 +117,6 @@
     </div>
 
     <script src="./../js/gallery.js"></script>
+    <script src="./../js/index.js"></script>
   </body>
 </html>
