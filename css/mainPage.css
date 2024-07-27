@@ -1040,7 +1040,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .benefits__list-item:not(:last-child, :nth-child(2)) {
+  .benefits__list-item:not(:last-child) {
     margin: 0 35px 35px 0;
   }
   .benefits__list-item-img img {
@@ -1081,13 +1081,13 @@ a {
 }
 @media screen and (max-width: 550px) {
   .header__body {
-    height: 636px;
+    height: 100vh;
     object-fit: cover;
   }
   .header__info {
     width: 85%;
     margin: 0;
-    top: 160px;
+    top: 20%;
     left: 55px;
   }
   .header__description {
@@ -1149,6 +1149,9 @@ a {
     width: 350px;
     height: auto;
     border-radius: 20px;
+  }
+  .benefits__list-item:nth-child(2) {
+    margin-right: 0;
   }
   .form {
     margin: 0;
