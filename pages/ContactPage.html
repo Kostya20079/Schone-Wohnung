@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Schöne Wohnung</title>
     <link rel="stylesheet" href="./../css/contactPage.css" />
-    <link rel="site icon" href="./../img/logo.png">
+    <link rel="site icon" href="./../img/logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
   </head>
   <body id="contact-page">
@@ -69,7 +74,9 @@
                 <div class="contact__aside-info">
                   <div class="contact__aside-tel">
                     <span class="contact__aside-info-name">Tel:</span>
-                    <a href="tel:01633425150" class="contact__aside-info-tel-link"
+                    <a
+                      href="tel:01633425150"
+                      class="contact__aside-info-tel-link"
                       >01633425150</a
                     >
                   </div>
@@ -109,11 +116,16 @@
             >
               <div class="contact__form-body">
                 <h3 class="contact__form-title">Kontaktieren Sie Uns</h3>
-                <form action="submit" method="post" class="contact__forms-body">
+                <form
+                  action="./../php/sendEmail.php"
+                  method="POST"
+                  id="form"
+                  class="contact__forms-body"
+                >
                   <input
                     type="text"
-                    name="client-name"
-                    class="contact__form-get-name form-input"
+                    name="name"
+                    class="contact__form-get-name form-input _req _name"
                     id="form-client-name"
                     placeholder="Ihr Name"
                   />
@@ -121,22 +133,22 @@
                   <input
                     type="email"
                     name="email"
-                    class="contact__form-get-email form-input"
+                    class="contact__form-get-email form-input _req _email"
                     id="form-client-email"
                     placeholder="Ihre E-Mail-Adresse"
                   />
 
                   <input
                     type="tel"
-                    name="client-tel"
-                    class="contact__form-get-tel form-input"
+                    name="tel"
+                    class="contact__form-get-tel form-input _req _phone"
                     id="form-client-tel"
                     placeholder="Deine Telefonnummer"
                   />
 
                   <input
                     type="text"
-                    name="client-message"
+                    name="message"
                     class="contact__form-get-message form-input-message"
                     id="form-client-message"
                     placeholder="Nachrichtentext"
@@ -227,5 +239,10 @@
     </div>
 
     <script src="./../js/index.js"></script>
+    <script src="./../js/sendForm.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>

@@ -26,6 +26,27 @@
     height: 460px;
     border-radius: 50px;
     padding: 18px 0 18px 45px;
+    position: relative;
+  }
+
+  &__form-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: rgb(157, 157, 157, 0.7) url("./../../icons/loading.gif") center /
+      50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transform: all 0.3s else 0s;
+  }
+
+  &__form-body._sending::after {
+    opacity: 1;
+    visibility: visible
   }
 
   &__submit-button {
