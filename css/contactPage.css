@@ -120,6 +120,10 @@ a {
   flex: 1 1 auto;
 }
 
+.form-input._error {
+  box-shadow: 0 0 10px red;
+}
+
 .nav-menu {
   padding: 12.5px;
   background-color: #d9d9d9;
@@ -325,6 +329,24 @@ a {
   height: 470px;
   border-radius: 50px;
   padding: 18px 0 18px 35px;
+  position: relative;
+}
+.contact__forms-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: rgba(157, 157, 157, 0.7) url("./../../icons/loading.gif") center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transform: all 0.3s else 0s;
+}
+.contact__forms-body._sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 .contact__form-title {
   font-family: "Red Hat Display", sans-serif;

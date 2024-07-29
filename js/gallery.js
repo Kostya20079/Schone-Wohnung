@@ -54,6 +54,7 @@ const photoItem = (photos) => {
     item.classList.add("gallery__item");
     const img = document.createElement("img");
     img.src = `./../img/Gallery/${photo.name}.jpg`;
+    img.alt = photo.name;
     item.append(img);
     ulList.append(item);
   });
