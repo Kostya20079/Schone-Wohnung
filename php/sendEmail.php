@@ -16,13 +16,13 @@ try {
     $mail->isSMTP();                                          
     $mail->Host       = 'smtp.gmail.com';                     
     $mail->SMTPAuth   = true;                                 
-    $mail->Username   = '';                                   
+    $mail->Username   = 'schonewohnung22@gmail.com';                                   
     $mail->Password   = '';                                   
     $mail->SMTPSecure = 'TLS';                                
     $mail->Port       = 587;                                  
 
-    $mail->setFrom('', 'Message from website');
-    $mail->addAddress(''); 
+    $mail->setFrom('schonewohnung22@gmail.com', 'Message from website');
+    $mail->addAddress('schonewohnung22@gmail.com'); 
     $body = '<p>Name: '.$_POST['name'].'</p>' . '<p>Email: '.$_POST['email'].'</p>' . '<p>Tel: '.$_POST['tel'].'</p>' . '<p>User comment: '.$_POST['message'].'</p>';
 
     $mail->isHTML(true);                                 
