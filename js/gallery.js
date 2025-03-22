@@ -41,6 +41,7 @@ const photos = [
   { name: "Image(40)" },
   { name: "Image(41)" },
   { name: "Image(42)" },
+  { name: "Назва фотографії" },
 ];
 
 const listForItems = document.getElementById("gallery");
